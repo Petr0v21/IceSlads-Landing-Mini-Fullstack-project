@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend to my project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "listen": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run listen\" \"npm run client\""
+  },
+  "keywords": [
+    "javascrit",
+    "js",
+    "node",
+    "js",
+    "mongodb",
+    "express"
+  ],
+  "author": "Vyicheslav Petrov",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.4.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14",
+    "nodemon": "^2.0.15"
+  }
+}
